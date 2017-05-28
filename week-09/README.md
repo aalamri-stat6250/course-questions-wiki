@@ -26,6 +26,8 @@ The instructor will then review the pull request and make comments should furthe
 - Question (lzhao4−stat6250): DO loops process a group of statements repeatedly or once?
 - Answer (lzhao4-stat6250): DO loops process a group of statements repeatedly rather than once. 
 - Question (cyuan10-stat6250): Are there any example of statement that can be used to combine DATA and PROC steps?
+- Question (aalamri−stat6250): What happens if you conjugate the DO loops with the "PROC" statement?
+- Answer (aalamri−stat6250):  SAS won't process it.
 
 
 
@@ -40,7 +42,7 @@ The instructor will then review the pull request and make comments should furthe
 - Question (lzhao4−stat6250): What decides the number of iterations in DO statement? 
 - Question (cyuan10-stat6250): If the BY statement is not included in the Do loop, what happens?
 - Answer (cyuan10-stat6250): Then it will default to 1 unit increments.
-
+- Question (aalamri−stat6250): What statement determines the stopping value of the loop? 
 
 
 [Course Textbook Chapter 14, Problem 3]
@@ -54,8 +56,9 @@ The instructor will then review the pull request and make comments should furthe
 - Question (mcardoso3-stat6250):  Does the "do count" statement cover both numerical and categorical variables?
 - Question (lzhao4−stat6250): How the DO loop perform repetitive calculations? 
 - Question (cyuan10-stat6250): Can the BY statement be anything other than numeric? Does it have it be integers?
-
-
+- Question (aalamri−stat6250): What is the DO loop used for?
+- Answer (aalamri−stat6250):  It is used for performing repetitive calculations with finite values.
+ 
 
 [Course Textbook Chapter 14, Problem 4]
 - Question (yzhu12-stat6250): Under what situations that we use DO WHILE and DO UNTIL statements?
@@ -67,7 +70,8 @@ The instructor will then review the pull request and make comments should furthe
 - Question (mcardoso3-stat6250):  What other variables can be used in a DO loop statement aside from Year?
 - Question (lzhao4−stat6250): How the DO loop executes in the DATA step? 
 - Question (cyuan10-stat6250): What if we used DO UNTIL instead? Would the stored YEAR be different? 
-
+ - Question (aalamri−stat6250): How does the result differ with and without using the "UNTIL" option in the DO loop?
+ 
 
 
 [Course Textbook Chapter 14, Problem 5]
@@ -83,7 +87,7 @@ The instructor will then review the pull request and make comments should furthe
 - Answer (lzhao4-stat6250): The OUTPUT statement overrides automatic output.
 - Question (cyuan10-stat6250): What happens when you include the OUTPUT statement?
 - Answer (cyuan10-stat6250): When the OUTPUT statement is included, then it will print the output for each iteration otherwise, the default is one single output.
-
+- Question (aalamri−stat6250): What is the benefit of using the "OUTPUT" statement when using the DO loop?
 
 
 [Course Textbook Chapter 14, Problem 6]
@@ -96,6 +100,8 @@ The instructor will then review the pull request and make comments should furthe
 - Question (mcardoso3-stat6250):  What is the limit to the number of observations that can be in a DO LOOP statemet?
 - Question (lzhao4−stat6250): How to count and store the number of iterations in the DO loop? 
 - Question (cyuan10-stat6250): Are increments always necessary and what if you want to do a loop where the iteration is not based on a numeric variable?
+- Question (aalamri−stat6250): What do the number of obsevations depond on when using the "OUTPUT" statement with the DO loop?
+- Answer (aalamri−stat6250): It depends on the number of times the "OUTPUT" statement executes.
 
 
 
@@ -109,6 +115,7 @@ The instructor will then review the pull request and make comments should furthe
 - Question (lzhao4−stat6250): How to correctly execute nested DO loops? 
 - Question (cyuan10-stat6250): How does SAS know where in the code is part of the Do loop and should be executed as such?
 - Answer (cyuan10-stat6250): The “Do” statement will start the loop and “End;” will stop the loop. Anything within the these two statements are part of the loop
+- Question (aalamri−stat6250):  In which case we can neither use the DO loop nor the DO UNTIL loop in order to perform iteration?
 
 
 
@@ -122,6 +129,7 @@ The instructor will then review the pull request and make comments should furthe
 - Question (lzhao4−stat6250): Does DO UNTIL statement allow you to execute DO loops when the condition is false? 
 - Answer (lzhao4-stat6250):  DO UNTIL statements enable you to execute DO loops based on whether a condition is true or false.
 - Question (cyuan10-stat6250): What is the difference between DO WHILE and DO UNTIL?
+* Question (aalamri−stat6250): What is the difference between the DO loop and the DO UNTIL loop?
 
 
 
@@ -136,7 +144,7 @@ The instructor will then review the pull request and make comments should furthe
 - Answer (mcardoso3-stat6250):  The biggest similarity between both DO statements is that they execute DO loops conditionally.
 - Question (lzhao4−stat6250): What is the difference between DO UNTIL statement and DO WHILE statement? 
 - Question (cyuan10-stat6250): What happens when you accidentally excuse an infinite Do loop?
-
+Question (aalamri−stat6250): When can you use the DO WHILE loop instead of the DO loop without changing  the variables ?
 
 
 [Course Textbook Chapter 14, Problem 10]
@@ -149,6 +157,7 @@ The instructor will then review the pull request and make comments should furthe
 - Question (mcardoso3-stat6250):  What do the "when" and "over" statements indicate and can they be a DO LOOP statement as well?
 - Question (lzhao4−stat6250): The WHILE expression is evaluated before or after the execution of the DO loop?
 - Question (cyuan10-stat6250): Can you have multiple nested DO UNTIL and DO WHILE loops?
+- Question (aalamri−stat6250): What does the WHILE expression contribute to the DO loop?
 
 
 
@@ -163,7 +172,7 @@ The instructor will then review the pull request and make comments should furthe
 - Answer (mcardoso3-stat6250):  An array is useful for reducing the number of statements that are required for processing variables.
 - Question (lzhao4−stat6250): How to correctly define an array? 
 - Question (cyuan10-stat6250): What is an “executable” statement?
-
+- Question (aalamri−stat6250): When do we need to use the array statement?
 
 
 [Course Textbook Chapter 15, Problem 2]
@@ -178,7 +187,7 @@ The instructor will then review the pull request and make comments should furthe
 - Answer (mcardoso3-stat6250):  It's the number of elements in the array, which can be specified in many ways.
 - Question (lzhao4−stat6250): What does the value inside the parentheses indicate for?
 - Question (cyuan10-stat6250): Are brackets, parentheses, and braces interchangeable? Is there a benefit of one over the others?
-
+- Question (aalamri−stat6250): When using the ARRY statement, what can the value in parentheses tell us about?
 
 
 [Course Textbook Chapter 15, Problem 3]
@@ -192,7 +201,7 @@ The instructor will then review the pull request and make comments should furthe
 - Question (lzhao4−stat6250): How to represent the values of the array elements?
 - Question (cyuan10-stat6250): What is the benefit of creating arrays? 
 - Answer (cyuan10-stat6250): You can use them in Do Loops.
-
+- Question (aalamri−stat6250): Why do need to specify Array Elements when using the array statement?
 
 
 [Course Textbook Chapter 15, Problem 4]
@@ -206,6 +215,7 @@ The instructor will then review the pull request and make comments should furthe
 - Question (mcardoso3-stat6250):  How many different values can an index variable contain in a DATA step?
 - Question (lzhao4−stat6250): Where is the right place to enclose index value? 
 - Question (cyuan10-stat6250): Does the index refer to the order in which the variables are listed or it’s alphabetical order?
+- Question (aalamri−stat6250): Were can we find the the function of the value when using the  array statement?
 
 
 
@@ -219,6 +229,7 @@ The instructor will then review the pull request and make comments should furthe
 - Question (mcardoso3-stat6250):  What types of variables/elements can a DIM function use to specify with in a statement?
 - Question (lzhao4−stat6250): When to use the DIM function? 
 - Question (cyuan10-stat6250): Does the * represent “all” in other statements too?
+- Question (aalamri−stat6250): Does the use of the the DIM Function differ when dealing with continuous or descret variables?
 
 
 
@@ -231,7 +242,7 @@ The instructor will then review the pull request and make comments should furthe
 - Question (mcardoso3-stat6250):  What types of variables can be created when using arrays?
 - Question (lzhao4−stat6250): Is there any kind of variable cannot be created by an ARRAY statement?  
 - Question (cyuan10-stat6250): Can variables be continuous values?
-
+- Question (aalamri−stat6250): Is there restriction when combining tow variables in an array statement?
 
 
 [Course Textbook Chapter 15, Problem 7]
@@ -245,7 +256,7 @@ By default, all character variables that are created in an ARRAY statement are a
 - Question (mcardoso3-stat6250):  What is the purpose of finding the difference between {i+1} and {i}?
 - Question (lzhao4−stat6250): What happens when you create variables in an ARRAY statement by omitting the array elements from the statement? 
 - Question (cyuan10-stat6250): In this example, is the output a single value? Do we need to include output statement to print the output of each iteration?
-
+- Question (aalamri−stat6250): What is the benefit of creating an array of character variables?
 
 
 [Course Textbook Chapter 15, Problem 8]
@@ -257,7 +268,7 @@ By default, all character variables that are created in an ARRAY statement are a
 - Question (mcardoso3-stat6250):  Why are parentheses needed when creating temporary array elements in an ARRAY statement?
 - Question (lzhao4−stat6250): How to correctly assign initial values to arrays? 
 - Question (cyuan10-stat6250): What is the difference between this array with numeric variables vs. using an index with increments of 300?
-
+- Question (aalamri−stat6250): How do go about making temporary array elements?
 
 
 [Course Textbook Chapter 15, Problem 9]
@@ -270,7 +281,7 @@ By default, all character variables that are created in an ARRAY statement are a
 - Question (mcardoso3-stat6250):  Is there a limit to how many elements you may have in a ARRAY statement?
 - Question (lzhao4−stat6250): How to group variables into two-dimensional array?
 - Question (cyuan10-stat6250): What if the increments in the array is not equal or linear?
-
+- Question (aalamri−stat6250): How does the array statement assign its elements?
 
 
 [recipe_to_create_unique_record_id (from Week 9 Overview)]
@@ -282,7 +293,7 @@ By default, all character variables that are created in an ARRAY statement are a
 - Answer (mcardoso3-stat6250):  It means to join strings together to form a single string.
 - Question (lzhao4−stat6250): From the recipe we can know that format "z6" meaning it's left-padded with zeros. So what else we can use?
 - Question (cyuan10-stat6250): For concatenating string values, can “+” be used instead?
-
+- Question (aalamri−stat6250): What is the "CATX" function used for?
 
 
 [recipe_to_disaggregate_counts_data (from Week 9 Overview)]
@@ -293,5 +304,5 @@ By default, all character variables that are created in an ARRAY statement are a
 - Question (mcardoso3-stat6250):  What would be the main reason to disaggregate the data in your dataset?
 - Question (lzhao4−stat6250): What is the distinction between high level of aggregations and low level of aggregations?
 - Question (cyuan10-stat6250): What is the benefit of disaggregate data and when would we use it?
-
+- Question (aalamri−stat6250): What is the process of applying the DO loop when using the low level of aggregations?
 
