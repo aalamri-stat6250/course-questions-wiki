@@ -27,11 +27,13 @@ The instructor will then review the pull request and make comments should furthe
 - Question (yzhu12-stat6250): In a SAS table, what does the rows and columns represent?
 - Answer (yzhu12-stat6250): The number of the rows represents observations, the number of the columns represents the variables.
 - *Question* (lwang30-stat6250) : If only the column of variable age is presented, do we still consider it to have four observations considering the missing value ?
+- Answer (aalamri−stat6250): No
 - Question (kveng-stat6250): Is “.” represent missing value in a data set?
 - Answer (kveng-stat6250): Yes, “.” Represents numeric missing value in a data set?
 - Question (hhu9−stat6250): What is the difference between variables and observations in data set?
 - Answer (hhu9−stat6250): Rows represent observations and columns represent variables.
 - Question (nly13-stat6250): Is it possible to set the name as an ID?
+- Answer (aalamri−stat6250): yes.
 - Question (meisenbach-stat6250): Are there any other variable types? Datetime? Boolean?
 - Answer (meisenbach-stat6250): No but... "SAS converts date, time, and datetime values back and forth between calendar dates and clock times with SAS language elements called formats and informats" - SAS 9.4 Language Reference.
 - Question (aoneill2−stat6250): Are observations always equivalent to the number of rows of data regardless of whether any specific row has null data fields?
@@ -39,9 +41,16 @@ The instructor will then review the pull request and make comments should furthe
 - Question (cyuan10−stat6250): Is the observations always the “rows” and variable always the columns?
 - Answer (mcardoso3-stat6250):  Yes, rows are called observations while columns are called variables, so their statuses remain the same.
 - Question (yren10−stat6250): When comparing two observations in one data set, if one observation missing 1 variable value, are we still able to do the comparison? Are we still getting a correct result?
+- Answer (aalamri−stat6250): No. the result may differe.
 - Question (akumar30−stat6250): Does missing value has any impact on total number of observation or variables in SAS Datasets?
-
-
+- Answer (aalamri−stat6250): Yes
+- Question (aalamri−stat6250): Why do we cmpare datasets knowing that some values are missing?
+- Question (aalamri−stat6250): Can We cmpare two data sets without a unequal columns?
+- Question (aalamri−stat6250): Can We cmpare two data sets without a unequal rows?
+- Question (aalamri−stat6250): What does Id stand for?
+- Question (aalamri−stat6250): How can missing values imact the result?
+- Question (aalamri−stat6250): Why do  observations represent row ?
+- Question (aalamri−stat6250): Why do  variables represent columns ?
 
 [Course Textbook Chapter 1, Problem 2]
 - Question (mcardoso3-stat6250):  Why does each SAS line end with a semicolon?
@@ -70,6 +79,17 @@ The instructor will then review the pull request and make comments should furthe
 - Question (yren10−stat6250): Can we usually use a single letter like "U" or “U.T” in stead "user.table"?
 - Answer (mcardoso3-stat6250):  No, "user.table" is a command that can import a table from an outside data set, but using an abbreviation for it wouldn't translate the same way.
 - Question (akumar30−stat6250): What is the default sorting format in SAS and how to format multiple variables in different sorting order?
+- Question (aalamri−stat6250): can we use two PROCs with only one run statmenet ?
+- Question (aalamri−stat6250): Are there case where the set staemetn can not be use ?
+- Question (aalamri−stat6250): Why SAS has its own way coding that is different from other software ?
+- Question (aalamri−stat6250): SAS tends to make short cut for statemtns that commonly used, does it only take the first four letters?
+- Question (aalamri−stat6250): Can we add the sicolon in the following line of the statemnt and not at the end of the statment ?
+- Question (aalamri−stat6250): What does sas mean with colors in the code(like red , purple,..) ?
+- Question (aalamri−stat6250): can we use two PROCs with only one run statmenet ?
+- Question (aalamri−stat6250): What is the maximum variables should   output statement contain ?
+- Question (aalamri−stat6250): the difference between step and statment?
+- Question (aalamri−stat6250): the difference between step and option?
+
 
 
 
@@ -109,6 +129,7 @@ The instructor will then review the pull request and make comments should furthe
 * *Question (aalshehry−stat6250):* How to represent missing data in SAS dataset?
 - Answer (mcardoso3-stat6250):  Missing data values may be represented by a "." in place of the blank data cell.
 - Question (lzhao4−stat6250): Can missing value indicates a different type of variable?
+- Question (aalamri−stat6250): No.
 - Question (yyan11−stat6250): What are Numeric variables?
 - Answer (yyan11−stat6250): Numeric variables, such as Policy and Total (shown below), can contain only
 numeric values (the digits 0 through 9, +, -, ., and E for scientific notation).
@@ -119,24 +140,35 @@ numeric values (the digits 0 through 9, +, -, ., and E for scientific notation).
 - *Question* (lwang30-stat6250) : How is the missing value displayed for both numeric and character variables ?
 - *Answer* (lwang30-stat6250) : The missing value appears as a period for numeric variables, and blank for character variables.
 - Question (kveng-stat6250): Does SAS exclude missing value when doing the calculation? 
+- Answer (aalamri−stat6250): Yes. 
 - Question (hhu9−stat6250): Who to represent missing value?
 - Answer (hhu9−stat6250): Blank or a period.
 - Question (nly13-stat6250): Can SAS read determine value types automatically when reading in a mixed data set?
+- Answer (aalamri−stat6250): Yes. 
 - Question (meisenbach-stat6250): SAS uses floating point representation for a numeric values? Does this cause inaccuracies when working with integer values?
 - Question (aoneill2−stat6250): Does a numeric variable have to be specified as such to be treated as a number for calculations?
 - Answer (mcardoso3-stat6250):  Yes, numeric variables can contain only numeric values, so that is how they must be treated for calculations.
 - Question (cyuan10−stat6250): What happens to the “.” missing numeric value when you calculate that variable? Is it simply ignored? What is the default action?
+- Question (aalamri−stat6250): SAS ignores the missing values by default. 
 - Question (yren10−stat6250): Does a missing value in a variable column affects the type of the variable?
 - Answer (yren10−stat6250): No, a blank dpesn't represent anything, the missing value is indcated by a period. 
 - Question (akumar30−stat6250): How to distinguish between different types of missing values (e.g missing values because of non-response or missing values because of invalid data entry)?
 - Answer (akumar30−stat6250):  In SAS, letters A-Z and underscore "_" to indicate the type of missing values.
-
+- Question (aalamri−stat6250): CAn we change the default sign of a missing value? 
+- Question (aalamri−stat6250): Hoe can substitude a value and give to any missing value?
+- Question (aalamri−stat6250): Is there a statement that gives us some info about the missing values in a dataset?
+- Question (aalamri−stat6250): What happens if we what sas to tell us the name of the variables that contain missing values?
+- Question (aalamri−stat6250): Why does sas use Blank or a period to show missing values?
+- Question (aalamri−stat6250): why can numeric variables only contain  numeric values?
+- Question (aalamri−stat6250): Does sas give a chart of where the missing values are?
 
 
 [Course Textbook Chapter 1, Problem 5]
 - Question (mcardoso3-stat6250): Why do the variable names need to start with a letter or underscore?
 * *Question (aalshehry−stat6250):* Can a character variable begins with a number?
+- Answer (aalamri−stat6250): yes
 - Question (lzhao4−stat6250): What is the basic rule to set a valid variable name in SAS?
+- Answer(aalamri−stat6250): It has to contain a letter.
 - Question (yyan11−stat6250): What are valid variable names? 
 - Answer (yyan11−stat6250): Variable names can be 1 to 32 characters long, must begin with a letter (A–Z, either uppercase or lowercase) or an underscore, and can continue with any combination of numbers, letters, or underscores.
 - Question (dlee117−stat6250): Can variable names contain a space?
@@ -146,6 +178,7 @@ numeric values (the digits 0 through 9, +, -, ., and E for scientific notation).
 - *Question* (lwang30-stat6250) : What are the rules for variable names ?
 - *Answer* (lwang30-stat6250) : Variable names must begin with a letter or an underscore, and continue with any combination of numerals, letters, or underscores.
 - Question (kveng-stat6250): Can a variable name contain special characters?
+- Answer (aalamri−stat6250): No
 - Question (hhu9−stat6250): What is the rules of SAS data set names and variable names?
 - Answer (hhu9−stat6250): Variable names follow the same rules as SAS data set names. They can be 1 to 32 characters long, must begin with a letter (A-Z, either uppercase or lowercase) or an underscore, and can continue with any combination of numerals, letters, or underscores.
 - Question (nly13-stat6250): In the text it says a variable can only begin with a letter or an underscore, but if does converting it to a character with $ make a difference?
@@ -153,12 +186,15 @@ numeric values (the digits 0 through 9, +, -, ., and E for scientific notation).
 - Question (meisenbach-stat6250): Is SAS case sensitive? 
 - Answer (meisenbach-stat6250): No
 - Question (aoneill2−stat6250): If a variable is not named correctly, does it generate an error in naming, or is the error type hard to pin dow?
+- Answer (aalamri−stat6250): yes
 - Question (cyuan10−stat6250): Are variable names case-sensitive and what other ‘rules’ or ‘guidelines’ are there around what makes a good variable name?
 - Answer (cyuan10−stat6250): Some basic rule is to name the file so that you the user or any other users will understand what it is. Use case or “_” to help distinguish between words.
 - Question (yren10−stat6250): Can a variable name contains other symbol like "$" or "#"?
 - Answer (yren10−stat6250): No,can only contains numbers, letters or underscores.
 - Question (akumar30−stat6250): What is the maximum size of character data type variables? 
 - Answer (akumar30−stat6250): Character variables can be up to 32,767 bytes long.
+- Question (aalamri−stat6250): What is the minimum size of character data type variables?
+- Question (aalamri−stat6250): Based on the outcumes, how to if the name of the variable is incorrect?
 
 
 
@@ -186,11 +222,14 @@ numeric values (the digits 0 through 9, +, -, ., and E for scientific notation).
 - Question (meisenbach-stat6250): What happens when you try to assign a value larger than the defined length of the variable?
 - Question (aoneill2−stat6250): How can you tell what the default length for a numeric variable is beyond the digits and decimal point that are shown for the entries? Is there a typical default length for decimal numbers?
 - Question (cyuan10−stat6250): In this example, does a leading “0” count as part of the length? For example, is 097.45 a different length than 97.45? 
+- Question (aalamri−stat6250): For what purposes do you use DATA _NULL_
 - Question (yren10−stat6250): If all numbers are integers, are they going to have different default length compare to non-integers?
 - Question (akumar30−stat6250):  What is the default length of numeric variables?
 - Answer (akumar30−stat6250): All numeric variables have a default length of 8 bytes.
-
-
+- Question (aalamri−stat6250): how to know Which SAS Procedures (PROCs) do we use and for what purpose? 
+- Question (aalamri−stat6250): Why do the maximum lenghths different for the variable name for the numeric and character? 
+- Question (aalamri−stat6250): can we change the default length of the numeric variables?
+- Question (aalamri−stat6250): can we change the default length of the character variables?
 
 [Course Textbook Chapter 2, Problem 3]
 - Question (mcardoso3-stat6250):  Why does te YEARCUTOFF=option affect two-digit year values, but not four-digit year values?
